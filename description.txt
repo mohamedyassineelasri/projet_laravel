@@ -1,0 +1,56 @@
+
+___Description___
+
+
+Authentification Utilisateur : Implémentation d'un système d'authentification sécurisé permettant aux utilisateurs de s'inscrire et de se connecter.
+
+Gestion de Profil : Les utilisateurs peuvent éditer leurs profils, incluant des informations telles que le nom, l'image de profil, etc.
+
+Opérations CRUD : Mise en œuvre des opérations CRUD sur au moins trois entités de données, avec un contrôleur de type ressource pour l'une d'entre elles .
+
+Ajout de Post : Les utilisateurs peuvent créer, éditer, et supprimer leurs propres publications.
+
+Génération de Rapport PDF : Intégration d'une fonctionnalité permettant de générer des rapports au format PDF à partir des données spécifiques de l'application.
+
+Importation de Données Excel : Ajout d'un bouton d'importation pour permettre aux utilisateurs de charger des données à partir d'un fichier Excel dans l'application.
+
+Tests Unitaires : Réalisation d'au moins un test unitaire pour garantir le bon fonctionnement d'au moins un contrôleur.
+
+Relations de Base de Données : Création d'une structure de base de données qui comprend au moins une relation 1,n et une autre n,n entre les entités, gérées au niveau des modèles.
+
+Middleware : Création d'un middleware qui sera appliqué sur une route ou un contrôleur spécifique.
+
+Technologies Utilisées
+Backend : Laravel
+Frontend : blade
+Base de Données : MySQL
+Authentification : Auth
+Génération de PDF : Dompdf
+Importation Excel : Maatwebsite/Laravel-Excel (pour Laravel)
+Tests Unitaires : PHPUnit
+Structure de la Base de Données
+La structure de la base de données comprendra au moins les tables suivantes (en fonction des entités de votre application) :
+
+Table users (pour stocker les informations des utilisateurs).
+Table posts (pour stocker les publications).
+Table profile (pour stocker les profile taires associés aux publications).
+Contrôleurs:
+Contrôleur de Ressource : Un contrôleur de type ressource pour gérer les opérations CRUD d'une entité principale de votre application.
+
+Contrôleur pour Gestion de Profil : Un contrôleur spécifique pour gérer les fonctionnalités liées à la gestion de profil.
+
+Contrôleur pour Génération de Rapport : Un contrôleur dédié à la génération de rapports PDF.
+
+Middleware
+Un middleware appelé MonMiddleware sera créé et appliqué sur une route ou un contrôleur spécifique pour démontrer son utilisation.
+
+Comment Exécuter le Projet
+Cloner le repository depuis [lien repository].
+Installer les dépendances en utilisant la commande : composer install (pour Laravel) ou npm install (pour Vue.js/React).
+Configurer la base de données et mettre à jour les informations de connexion dans le fichier .env.
+Exécuter les migrations et les seeders si nécessaire : php artisan migrate --seed.
+Exécuter le serveur : php artisan serve
+Accéder à l'application depuis le navigateur à l'adresse [http://localhost:8000] (ou le port approprié).
+Tests Unitaires
+Utiliser PHPUnit pour exécuter les tests unitaires sur au moins un contrôleur.
+
